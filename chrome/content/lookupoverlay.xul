@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="lookup-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script src="chrome://peoplelookup/content/lookup.js" type="application/x-javascript"></script>
+<popup id="contentAreaContextMenu">
+  <menuitem id="lookup" label="Look them up  (Ctrl + Alt + p)" accesskey="L" insertafter="context-stop" oncommand="PeopleLookup.searchnames()" />
+</popup>
+<keyset>
+  <key id="key-lookup" modifiers="control alt" key="P" oncommand="PeopleLookup.searchnames()" />
+</keyset>
+<menupopup id="menu_ToolsPopup">
+     <menu insertbefore="devToolsSeparator" label="People Lookup" accesskey="P">
+       <menupopup id="site_toggle">
+	      <checkbox oncommand="PeopleLookup.toggle(this)" id="google" label="Google" src="chrome://peoplelookup/skin/google.png" /> 
+ 	      <checkbox oncommand="PeopleLookup.toggle(this)" id="linkedin" label="LinkedIn" src="chrome://peoplelookup/skin/linkedin.png" />
+	      <checkbox oncommand="PeopleLookup.toggle(this)" id="facebook" label="Facebook" src="chrome://peoplelookup/skin/facebook.png" />
+	      <checkbox oncommand="PeopleLookup.toggle(this)" id="wikipedia" label="Wikipedia" src="chrome://peoplelookup/skin/wikipedia.png" />
+	      <checkbox oncommand="PeopleLookup.toggle(this)" id="crunchbase" label="Crunchbase" src="chrome://peoplelookup/skin/crunchbase.png" />
+	      <checkbox oncommand="PeopleLookup.toggle(this)" id="twitter" label="Twitter" src="chrome://peoplelookup/skin/twitter.png" />
+       </menupopup>
+     </menu>
+</menupopup>
+</overlay>

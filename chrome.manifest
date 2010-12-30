@@ -1,0 +1,3 @@
+content peoplelookup chrome/content/
+overlay chrome://browser/content/browser.xul chrome://peoplelookup/content/lookupoverlay.xul
+skin peoplelookup classic/1.0 chrome/skin/
