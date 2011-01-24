@@ -28,7 +28,7 @@ window.PeopleLookup = {
 	    var facebook = "http://facebook.com/home.php?#!/search.php?q=" + first + "%20" + last;
 	    var wikipedia = "http://wikipedia.org/wiki/" + first + "_" + last; 
 	    var crunchbase = "http://crunchbase.com/person/" + first + "-" + last;
-	    var twitter = "http://search.twitter.com/search?q=" + first + "+" + last;
+	    var twitter = "http://twitter.com/who_to_follow/search/" + first + "%20" + last;
 	    var sites = [google, linkedin, facebook, wikipedia, crunchbase, twitter]; 
 	    if ((first == null) || (last == null)) alert("Need to highlight a person's first and last name.");
 	    else if ((first.length > 25) || (last.length > 25)) continue;
